@@ -1,0 +1,59 @@
+.page {
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+.dl-reset {
+  margin: 0;
+}
+
+.dd-reset {
+  margin: 0;
+}
+
+.input-reset {
+  border: none;
+  background-color: transparent;
+}
+
+.fieldset-reset {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.heading-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.btn-reset {
+  border: none;
+}
+
+.abbr-reset {
+  text-decoration: none;
+
+  &[title] {
+    text-decoration: none;
+  }
+}
+
+.sticky {
+  @media (min-width: 48.01em) {
+    position: sticky;
+    left: 0;
+    top: 14rem;
+  }
+}
+
+._show-modal {
+  overflow: hidden;
+}
+
+._show-menu {
+  @media (max-width: 48em) {
+    overflow: hidden;
+  }
+}

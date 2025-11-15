@@ -1,0 +1,30 @@
+:root {
+  // base
+  --font-family: "EuclidCircularA", sans-serif;
+  --content-width: 1920;
+  --container-width: 1596px;
+  --container-offset: 1rem;
+
+  // colors
+  --c-white: #fff;
+  --c-bg: #f3f3f3;
+  --c-primary: #212121;
+  --c-secondary: #e0e0e0;
+  --c-ternary: #a7a7a7;
+  --c-accent: #2ed36a;
+  --c-accent-secondary: #ff3bcb;
+  --c-accent-ternary: #be88ff;
+  --c-black: #000;
+
+  // props
+  --p-tr: 0.3s ease-out;
+  --p-zidx-secondary: 100;
+  --p-zidx-primary: 900;
+
+  // fonts
+  --txt-primary: 400 1.8rem / 100% var(--font-family);
+
+  @media (max-width: 1596px) {
+    --container-offset: 4rem;
+  }
+}

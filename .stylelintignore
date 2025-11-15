@@ -1,0 +1,3 @@
+
+app/**/*.css
+src/scss/vendor/**/*
