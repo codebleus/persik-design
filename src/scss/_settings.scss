@@ -80,8 +80,7 @@ p {
   margin: 0 auto;
   padding-right: var(--container-offset);
   padding-left: var(--container-offset);
-  width: 100%;
-  max-width: var(--container-width);
+  width: var(--container-width);
 }
 
 section {

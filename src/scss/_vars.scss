@@ -2,7 +2,7 @@
   // base
   --font-family: "EuclidCircularA", sans-serif;
   --content-width: 1920;
-  --container-width: 1665px;
+  --container-width: 166.5rem;
   --container-offset: 4rem;
 
   // colors
@@ -27,6 +27,7 @@
   --txt-primary: 400 1.8rem / 100% var(--font-family);
 
   @media (max-width: 48em) {
+    --container-width: 100%;
     --txt-primary: 400 3.6rem / 100% var(--font-family);
   }
 }
