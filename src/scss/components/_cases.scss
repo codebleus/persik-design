@@ -1,0 +1,52 @@
+.cases {
+  // .cases__container
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6rem;
+  }
+
+  // .cases__list
+
+  &__list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 16.4rem;
+
+    @media (max-width: 48em) {
+      display: flex;
+      flex-direction: column;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 3rem;
+      gap: 3.5rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 0.6rem;
+        width: 2px;
+        height: 100%;
+        background-color: #825ab4;
+      }
+    }
+  }
+
+  // .cases__items
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+
+    @media (max-width: 48em) {
+      display: flex;
+      flex-direction: column;
+      gap: 4.4rem;
+    }
+  }
+}

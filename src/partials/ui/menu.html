@@ -1,0 +1,35 @@
+<div class="@cls menu" data-lenis-prevent>
+  <div class="menu__container container">
+    <div class="menu__head">
+      <!-- prettier-ignore -->
+      @include('./close-btn.html', {
+                    "cls": "menu__close-btn",
+                    "txt": "Закрыть",
+                    "icon": "cross",
+                    "attr": "data-switch='target:.page;class:_show-menu;action:off;lock:false'"
+                })
+
+      <!-- prettier-ignore -->
+      @include('./button.html', {
+                "cls": "menu__cta-btn",
+                "tag":"a",
+                "attr": "href='#'",
+                "txt": "Оставить заявку"
+                })
+    </div>
+    <div class="menu__body"></div>
+    <div class="menu__lower">
+      <a href="/" class="menu__logo-wrap"
+        ><img src="img/logo-1.svg" alt="" class="menu__logo"
+      /></a>
+      <ul class="menu__socials">
+        <!-- prettier-ignore -->
+        @loop('./ic-item.html', [
+                    {"cls": "menu__socials-item", "icon": "phone.svg", "attr": "href='tel:79164402991'", "outerTag": "li", "tag": "a"},
+                    {"cls": "menu__socials-item _has-bg", "icon": "tg.webp", "attr": "href='#' target='_blank'", "outerTag": "li", "tag": "a"},
+                    {"cls": "menu__socials-item _has-bg", "icon": "wa.webp", "attr": "href='#' target='_blank'", "outerTag": "li", "tag": "a"}
+                ])
+      </ul>
+    </div>
+  </div>
+</div>

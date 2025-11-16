@@ -2,8 +2,8 @@
   // base
   --font-family: "EuclidCircularA", sans-serif;
   --content-width: 1920;
-  --container-width: 1596px;
-  --container-offset: 1rem;
+  --container-width: 1665px;
+  --container-offset: 4rem;
 
   // colors
   --c-white: #fff;
@@ -11,10 +11,12 @@
   --c-primary: #212121;
   --c-secondary: #e0e0e0;
   --c-ternary: #a7a7a7;
+  --c-quaternary: #d2ccd5;
   --c-accent: #2ed36a;
   --c-accent-secondary: #ff3bcb;
   --c-accent-ternary: #be88ff;
   --c-black: #000;
+  --c-hover: #cbb9d4;
 
   // props
   --p-tr: 0.3s ease-out;
@@ -24,7 +26,7 @@
   // fonts
   --txt-primary: 400 1.8rem / 100% var(--font-family);
 
-  @media (max-width: 1596px) {
-    --container-offset: 4rem;
+  @media (max-width: 48em) {
+    --txt-primary: 400 3.6rem / 100% var(--font-family);
   }
 }

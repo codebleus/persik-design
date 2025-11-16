@@ -1,6 +1,11 @@
 import { NavMenu } from "./components/navMenu.js";
 import { U } from "./functions/utils.js";
 import { InputMaskManager } from "./components/InputMaskManager.js";
+import { createRules, ToggleGroup } from "./components/ToggleGroup.js";
+import {
+  SwitchController,
+  createControllerRules,
+} from "./components/SwitchController.js";
 
 U.addClass(document.documentElement, "_page-loaded");
 
@@ -47,5 +52,8 @@ if (navRoot) {
 /* input mask manager instance */
 new InputMaskManager().init();
 
-/* state controller instance */
-// new SetStateController().init();
+/* toggle group instance */
+new ToggleGroup(createRules()).init();
+
+/* switch controller instance */
+new SwitchController(createControllerRules()).init();

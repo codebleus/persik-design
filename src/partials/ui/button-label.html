@@ -1,0 +1,14 @@
+<@tag @attr class="btn-label @cls">
+  <span class="btn-label__inner">
+    @if (icon) {
+        <img
+            class="btn-label__icon"
+            aria-hidden="true"
+            src="img/svg/@icon"
+            alt=""
+            />
+    }
+
+    <span class="btn-label__text txt-small">@txt</span>
+  </span>
+</@tag>

@@ -1,0 +1,80 @@
+<header class="@cls header">
+  <div class="header__container container">
+    <!-- prettier-ignore -->
+    @include('./ui/hamburger.html', {"cls": "header__hamburger", "attr": "data-switch='target:.page;class:_show-menu;action:on;lock:true'"})
+
+    <nav
+      data-move="from:.header__container;to:.menu__body;"
+      class="header__nav"
+    >
+      <ul class="header__nav-list">
+        <!-- prettier-ignore -->
+        @loop('./ui/nav-item-header.html', [
+                        {
+                            "txt": "О студии",
+                            "cls": "header__nav-item",
+                            "icon": "home",
+                            "sublist": []
+                        },
+                        {
+                            "txt": "Портфолио",
+                            "cls": "header__nav-item",
+                            "icon": "star",
+                            "sublist": []
+                        },
+                        {
+                            "txt": "Услуги",
+                            "cls": "header__nav-item",
+                            "icon": "todo",
+                            "sublist": [
+                              {"txt": "Дизайн сайтов", "icon": "arrowRight"},
+                              {"txt": "Дизайн интернет - магазинов", "icon": "arrowRight"},
+                              {"txt": "Дизайн мобильных приложений", "icon": "arrowRight"},
+                              {"txt": "Дизайн сложных платформ", "icon": "arrowRight"},
+                              {"txt": "Дизайн презентаций", "icon": "arrowRight"},
+                              {"txt": "Брендинг", "icon": "arrowRight"}
+                            ]
+                        },
+                        {
+                            "txt": "Сайты",
+                            "cls": "header__nav-item",
+                            "icon": "saved",
+                            "sublist": []
+                        },
+                        {
+                            "txt": "Статьи",
+                            "cls": "header__nav-item",
+                            "icon": "message",
+                            "sublist": []
+                        }
+                    ])
+      </ul>
+    </nav>
+    <a href="/" class="header__logo-wrap">
+      <img src="img/logo.svg" alt="" class="header__logo" />
+    </a>
+    <div class="header__info">
+      <a href="mailto:persik-design@yandex.ru" class="header__link"
+        >persik-design@yandex.ru</a
+      >
+      <!-- prettier-ignore -->
+      @include('ui/button.html', {
+                "cls": "header__cta-btn",
+                "tag":"a",
+                "attr": "href='#'",
+                "txt": "Оставить заявку"
+                })
+
+      <!-- prettier-ignore -->
+      @include('./ui/tel-header.html', {
+                        "txt": "+7 916 440 29 91",
+                        "attr": "href='tel:79164402991'",
+                        "icon": "phone",
+                        "cls": "header__tel"
+                    })
+    </div>
+  </div>
+
+  <!-- prettier-ignore -->
+  @include('./ui/menu.html', {"cls": "header__menu"})
+</header>

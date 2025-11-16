@@ -1,0 +1,14 @@
+<@tag class="case-item @cls">
+  <a href="#" class="case-item__inner">
+    <!-- prettier-ignore -->
+      @include('./ctrl-ellipses.html', {"cls": "case-item__ctrl-ellipses"})
+
+    <div class="case-item__headline">
+      <h3 class="case-item__heading subtitle">@heading</h3>
+      <p class="case-item__subtitle">@subtitle</p>
+    </div>
+    <div class="case-item__image-wrap">
+      <img src="img/content/@image.webp" alt="" class="case-item__image" />
+    </div>
+  </a>
+</@tag>

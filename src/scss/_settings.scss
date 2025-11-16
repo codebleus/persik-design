@@ -15,7 +15,7 @@
   scrollbar-gutter: stable;
 
   @media (max-width: 48em) {
-    font-size: calc((100 / 390) * 5vw);
+    font-size: calc((100 / 440) * 5vw);
   }
 
   @media (min-width: 1920.1px) {
@@ -85,6 +85,5 @@ p {
 }
 
 section {
-  overflow: hidden;
   margin-bottom: 15rem;
 }

@@ -1,0 +1,30 @@
+.tel-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  @media (any-hover: hover) {
+    &:hover {
+      .tel-header__icon {
+        color: var(--c-accent);
+      }
+    }
+  }
+
+  // .tel-header__icon
+
+  &__icon {
+    --size: 2.5rem;
+
+    flex: 0 0 var(--size);
+    width: var(--size);
+    height: var(--size);
+    transition: color var(--p-tr);
+  }
+
+  // .tel-header__txt
+
+  &__txt {
+    white-space: nowrap;
+  }
+}

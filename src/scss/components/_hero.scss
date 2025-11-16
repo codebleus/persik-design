@@ -1,0 +1,136 @@
+.hero {
+  position: relative;
+  margin-bottom: 8.3rem;
+
+  @media (max-width: 48em) {
+    margin-bottom: 6.6rem;
+  }
+
+  // .hero__container
+
+  &__container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+
+    @media (max-width: 48em) {
+      height: 95dvh;
+    }
+  }
+
+  // .hero__logo-wrap
+
+  &__logo-wrap {
+    margin-top: 8rem;
+    width: 177rem;
+
+    @media (max-width: 48em) {
+      margin-top: -6rem;
+      width: 88rem;
+    }
+  }
+
+  // .hero__logo
+
+  &__logo {
+  }
+
+  // .hero__scroll
+
+  &__scroll-wrap {
+    position: absolute;
+    left: 50%;
+    bottom: 5rem;
+    transform: translateX(-50%);
+
+    @media (max-width: 48em) {
+      bottom: 12rem;
+    }
+  }
+
+  &__scroll {
+    transition-delay: 0.4s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 1.2rem;
+      border-radius: 0.3rem;
+      width: 3px;
+      height: 1.6rem;
+      background-color: var(--c-white);
+      opacity: 0;
+      transform: translateX(-50%);
+      animation: hero-scroll 2s linear 0s infinite;
+
+      @media (max-width: 48em) {
+        top: 2rem;
+        border-radius: 0.6rem;
+        width: 2.5px;
+        height: 2.8rem;
+      }
+    }
+  }
+
+  // .hero__scroll-icon
+
+  &__scroll-icon {
+    width: 4.5rem;
+    height: 6.2rem;
+
+    @media (max-width: 48em) {
+      width: 8rem;
+      height: 10.8rem;
+    }
+  }
+
+  // .hero__bg
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        0deg,
+        rgba(21, 18, 43, 0.25),
+        rgba(21, 18, 43, 0.25)
+      );
+    }
+  }
+
+  // .hero__bg-content
+
+  &__bg-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@keyframes hero-scroll {
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(50%) translateX(-50%);
+
+    // opacity: 0;
+  }
+}

@@ -1,0 +1,50 @@
+<section class="cases">
+  <div class="cases__container container">
+    <ul data-stagger="0.1" class="cases__list reveal-group">
+      <!-- prettier-ignore -->
+      @loop('./ui/list-item-cases.html', [
+                {"cls": "cases__list-item reveal fade-up", "tag": "li", "txt": "Дизайн, как алхимическая установка"},
+                {"cls": "cases__list-item reveal fade-up", "tag": "li", "txt": "В которой желания переплавляется в ясность"},
+                {"cls": "cases__list-item reveal fade-up", "tag": "li", "txt": "А архетипы работают, как механизмы"},
+                {"cls": "cases__list-item reveal fade-up", "tag": "li", "txt": "Преобразования будущей энергии."}
+                ])
+    </ul>
+
+    <!-- prettier-ignore -->
+    @include('./ui/head-cases.html', {"cls": "cases__head fade-up reveal", "subtitle": "Кейсы", "subtitleTxt": "Проекты за 2023-2026 г.", "heading": "Разработка дизайна любой сложности от простых лендингов до мобильных приложений, ПО и FrameWork-oв:", "lowerHeading": "Агентство дизайна.", "lowerSubtitle": "Создаём цифровые продукты, которые двигают метрики, а не слайды."})
+
+    <ul data-stagger="0.1" class="cases__items reveal-group">
+      <!-- prettier-ignore -->
+      @loop('./ui/case-item.html', [
+                {
+                    "tag": "li",
+                    "cls": "cases__item reveal fade-up",
+                    "heading": "TEA-PORT",
+                    "subtitle": "Интернет магазин Китайских чаев",
+                    "image": "case-1"
+                },
+                {
+                    "tag": "li",
+                    "cls": "cases__item reveal fade-up",
+                    "heading": "Атлант FrameWork",
+                    "subtitle": "Платформа для СБЕР",
+                    "image": "case-2"
+                },
+                {
+                    "tag": "li",
+                    "cls": "cases__item reveal fade-up",
+                    "heading": "TARS",
+                    "subtitle": "Платформа для хаккеров",
+                    "image": "case-3"
+                },
+                {
+                    "tag": "li",
+                    "cls": "cases__item reveal fade-up",
+                    "heading": "SVET",
+                    "subtitle": "Приложение для лечения депрессии",
+                    "image": "case-4"
+                }
+            ])
+    </ul>
+  </div>
+</section>

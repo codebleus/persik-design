@@ -1,0 +1,42 @@
+.ic-item {
+  display: inline-flex;
+
+  &._has-bg {
+    .ic-item__inner {
+      background-color: rgba(172, 103, 255, 0.25);
+    }
+  }
+
+  &:not(._has-bg) {
+    .ic-item__icon {
+      @media (max-width: 48em) {
+        --size: 6.5rem;
+      }
+    }
+  }
+
+  // .ic-item__inner
+
+  &__inner {
+    display: inline-flex;
+    flex: 0 0 var(--size);
+    align-items: center;
+    justify-content: center;
+    border: 0.2rem solid rgba(190, 136, 255, 0.5);
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+
+    --size: 11.4rem;
+  }
+
+  // .ic-item__icon
+
+  &__icon {
+    --size: 7.4rem;
+
+    flex: 0 0 var(--size);
+    width: var(--size);
+    height: var(--size);
+  }
+}

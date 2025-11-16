@@ -1,0 +1,47 @@
+<div class="head-cases @cls">
+  <div class="head-cases__headline">
+    <div class="head-cases__subtitle-wrap">
+      <h2 class="head-cases__subtitle subtitle">@subtitle</h2>
+      <p class="head-cases__subtitle-txt txt-small">@subtitleTxt</p>
+    </div>
+    <h3 class="head-cases__heading h">@heading</h3>
+  </div>
+  <div class="head-cases__group">
+    <ul class="head-cases__actions">
+      <li class="head-cases__actions-item">
+        <!-- prettier-ignore -->
+        @include('./button-label.html', {
+                        "tag": "button",
+                        "attr": "type='button' data-modal-btn='.request-modal'",
+                        "cls": "head-cases__btn-label _has-bg",
+                        "txt": "Запросить оценку проекта",
+                        "icon": ""
+                    })
+      </li>
+      <li class="head-cases__actions-item">
+        <!-- prettier-ignore -->
+        @include('./button-label.html', {
+                        "tag": "a",
+                        "attr": "href='#' target='_blank'",
+                        "cls": "head-cases__btn-label _ic",
+                        "txt": "Связаться Whats-app",
+                        "icon": "wa.webp"
+                    })
+      </li>
+      <li class="head-cases__actions-item">
+        <!-- prettier-ignore -->
+        @include('./button-label.html', {
+                        "tag": "a",
+                        "attr": "href='#' target='_blank'",
+                        "cls": "head-cases__btn-label _ic",
+                        "txt": "Связаться в Telegram",
+                        "icon": "tg.webp"
+                    })
+      </li>
+    </ul>
+    <div class="head-cases__caption">
+      <h4 class="head-cases__caption-title subtitle-small">@lowerHeading</h4>
+      <p class="head-cases__caption-txt txt-small">@lowerSubtitle</p>
+    </div>
+  </div>
+</div>

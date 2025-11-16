@@ -4,9 +4,11 @@
 
   <body class="page__body">
     <div class="site-container">
-      @include('partials/header.html')
+      @include('partials/header.html', {"cls": "_is-hidden"})
       <main class="main">
         <!-- prettier-ignore -->
+        @include('partials/_hero.html')
+        @include('partials/_cases.html')
       </main>
       @include('partials/footer.html') @include('partials/svg.html')
     </div>

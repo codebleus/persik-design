@@ -1,0 +1,32 @@
+.ctrl-ellipses {
+  display: flex;
+  gap: 0.8rem;
+
+  // .ctrl-ellipses__el
+
+  &__el {
+    --size: 1.4rem;
+
+    flex: 0 0 var(--size);
+    border: 1px solid var(--c-primary);
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+
+    @media (max-width: 48em) {
+      --size: 1.6rem;
+    }
+
+    &:first-child {
+      background-color: #fe5c59;
+    }
+
+    &:nth-child(2) {
+      background-color: #f3bf6d;
+    }
+
+    &:last-child {
+      background-color: #2ed36a;
+    }
+  }
+}

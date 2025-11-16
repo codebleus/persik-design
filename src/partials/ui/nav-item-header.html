@@ -1,0 +1,34 @@
+<li class="@cls nav-item-header" data-toggle="group:menuItem;">
+  <div class="nav-item-header__group">
+    <svg class="nav-item-header__icon" aria-hidden="true">
+      <use href="#@icon-svg"></use>
+    </svg>
+    <a href="#" class="nav-item-header__txt">@txt</a>
+    <button class="nav-item-header__arr-btn" type="button">
+      <svg class="nav-item-header__arr-btn-icon" aria-hidden="true">
+        <use href="#arrowRight-svg"></use>
+      </svg>
+    </button>
+  </div>
+  <!-- prettier-ignore -->
+  @if(sublist && sublist.length){
+  <div class="nav-item-header__sublist">
+    <div class="nav-item-header__sublist-inner">
+      <ul class="nav-item-header__sublist-list">
+        @for(var i = 0; i < sublist.length; i++){
+        <li class="nav-item-header__sublist-item sublist-item-nav-item-header">
+          <a href="#" class="sublist-item-nav-item-header__inner">
+            <span class="sublist-item-nav-item-header__txt"
+              >`+(sublist[i].txt)+`</span
+            >
+            <svg class="sublist-item-nav-item-header__icon" aria-hidden="true">
+              <use href="#`+(sublist[i].icon)+`-svg"></use>
+            </svg>
+          </a>
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
+  }
+</li>
