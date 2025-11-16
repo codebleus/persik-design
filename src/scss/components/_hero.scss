@@ -144,3 +144,8 @@
     // opacity: 0;
   }
 }
+.page:not(._page-loaded) {
+  .hero__container {
+    opacity: 0;
+  }
+}
