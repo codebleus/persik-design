@@ -27,7 +27,7 @@
   &__logo-wrap {
     margin-top: 8rem;
     width: 177rem;
-
+    transition: opacity var(--p-tr);
     @media (max-width: 48em) {
       margin-top: -6rem;
       width: 88rem;
@@ -63,6 +63,7 @@
   }
 
   &__scroll {
+    transition: opacity var(--p-tr);
     transition-delay: 0.4s;
 
     &::before {
@@ -144,8 +145,9 @@
     // opacity: 0;
   }
 }
-.page:not(._page-loaded) {
-  .hero__container {
-    opacity: 0;
+._page-loaded {
+  .hero__logo-wrap,
+  .hero__scroll {
+    opacity: 1;
   }
 }
