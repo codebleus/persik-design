@@ -37,6 +37,16 @@
   // .hero__logo
 
   &__logo {
+    &_m {
+      @media (min-width: 48.01em) {
+        display: none;
+      }
+    }
+    &_d {
+      @media (max-width: 48em) {
+        display: none;
+      }
+    }
   }
 
   // .hero__scroll
