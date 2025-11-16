@@ -77,6 +77,11 @@
       &__text {
         font-weight: 500;
       }
+      &__icon {
+        @media (max-width: 48em) {
+          --size: 7.2rem;
+        }
+      }
     }
 
     @media (any-hover: hover) {
@@ -139,10 +144,6 @@
     flex: 0 0 var(--size);
     width: var(--size);
     height: var(--size);
-
-    @media (max-width: 48em) {
-      --size: 7.2rem;
-    }
   }
 
   // .btn-label__text
