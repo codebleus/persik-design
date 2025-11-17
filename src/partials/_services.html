@@ -1,0 +1,104 @@
+<section class="services">
+  <div class="services__container container">
+    <div class="services__wrap fade-up reveal">
+      <div class="services__head">
+        <div class="services__headline">
+          <h2 class="services__heading h">Наши услуги</h2>
+          <p class="services__subtitle txt-small">Дизайн под ключ!</p>
+        </div>
+        <p class="services__text txt-small">
+          <strong>Разработано 50+ проектов!</strong> Как простых лендингов, так
+          и сложных ПО и FrameWorkove
+        </p>
+      </div>
+      <ul data-stagger="0.1" class="services__items">
+        <!-- prettier-ignore -->
+        @loop('./ui/services-item.html', [
+                        {
+                            "cls": "services__item  reveal fade-up",
+                            "tag": "li",
+                            "img": "serv-1",
+                            "subtitle": "Аналитика пользовательских сценариев.",
+                            "heading": "Изучим ваших конкурентов, как прямых, так и зарубежных."
+                        },
+                        {
+                            "cls": "services__item  reveal fade-up",
+                            "tag": "li",
+                            "img": "serv-2",
+                            "subtitle": "Дизайн нескольких экранов, для выбора стилистики",
+                            "heading": "Разработка общей стилистики вашего продукта"
+                        },
+                        {
+                            "cls": "services__item  reveal fade-up",
+                            "tag": "li",
+                            "img": "serv-3",
+                            "subtitle": "Помощь в реализации контента для наполнения проекта",
+                            "heading": "Поможем с написанием текстов, фото или видео контентом"
+                        },
+                        {
+                            "cls": "services__item  reveal fade-up",
+                            "tag": "li",
+                            "img": "serv-4",
+                            "subtitle": "Разработаем дизайн под любые разрешения или форматы",
+                            "heading": "Адаптация дизайна под любые необходимые устройства"
+                        },
+                        {
+                            "cls": "services__item  reveal fade-up",
+                            "tag": "li",
+                            "img": "serv-5",
+                            "subtitle": "Реализуем для вас полноценную дизайн систему или UI руководство",
+                            "heading": "Разработка или доработка дизайн-системы / UI-кита"
+                        },
+                        {
+                            "cls": "services__item  reveal fade-up",
+                            "tag": "li",
+                            "img": "serv-6",
+                            "subtitle": "Ui/Ux сайтов и приложений, брендинг, презентации, баннеры и другое",
+                            "heading": "Дизайн сайтов, ПО, банковских систем, магазинов, каталогов"
+                        }
+                    ])
+      </ul>
+    </div>
+    <ul data-stagger="0.1" class="services__actions">
+      <!-- prettier-ignore -->
+      @loop('./ui/action-item.html', [
+                    {
+                        "cls": "services__action  reveal fade-up",
+                        "tag": "li",
+                        "icon": "send.svg",
+                        "heading": "Запросить оценку",
+                        "text": "Оставьте заявку и подробнее опишите проект",
+                        "innerTag": "button",
+                        "innerAttr": "type='button'"
+                    },
+                    {
+                        "cls": "services__action _has-bg  reveal fade-up",
+                        "tag": "li",
+                        "icon": "wa.webp",
+                        "heading": "Связаться в w-app",
+                        "text": "Свяжитесь с нами в удобном для вас формате",
+                        "innerTag": "a",
+                        "innerAttr": "href='#' target='_blank'"
+                    },
+                    {
+                        "cls": "services__action _has-bg  reveal fade-up",
+                        "tag": "li",
+                        "icon": "tg.webp",
+                        "heading": "Связаться в tlgm",
+                        "text": "Свяжитесь с нами в удобном для вас формате",
+                        "innerTag": "a",
+                        "innerAttr": "href='#' target='_blank'"
+                    },
+                    {
+                        "cls": "services__action  reveal fade-up",
+                        "tag": "li",
+                        "icon": "tel.svg",
+                        "heading": "15-минутный созвон",
+                        "text": "Позвоните нам, чтобы обсудить ваш продукт",
+                        "innerTag": "a",
+                        "innerAttr": "href='#' target='_blank'"
+                    }
+                ])
+    </ul>
+  </div>
+</section>

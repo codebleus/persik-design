@@ -1,0 +1,55 @@
+<section class="cta">
+  <div class="cta__container container fade-up reveal">
+    <div class="cta__head">
+      <img src="img/logo-3.svg" alt="" class="cta__logo" />
+    </div>
+    <div class="cta__text-wrap">
+      <h2 class="cta__heading subtitle-small">Агентство дизайна.</h2>
+      <p class="cta__subtitle txt-small">
+        Рост конверсии — за счёт данных, а не догадок.
+      </p>
+    </div>
+    <ul data-stagger="0.1" class="cta__actions">
+      <li class="cta__actions-item reveal fade-up">
+        <button
+          type="button"
+          data-modal-btn=".request-modal"
+          class="btn-label cta__btn-label _has-bg"
+        >
+          <span class="btn-label__inner">
+            <span class="btn-label__text txt-small _desktop-only"
+              >Запросить оценку проекта</span
+            >
+            <span class="btn-label__text txt-small _mobile-only"
+              >Оставить заявку</span
+            >
+          </span>
+        </button>
+      </li>
+      <li class="cta__actions-item reveal fade-up">
+        <!-- prettier-ignore -->
+        @loop('./ui/button-label.html', [
+                        {
+                            "tag": "a",
+                            "attr": "href='#'",
+                            "cls": "cta__btn-label _has-bg _has-bg_ghost",
+                            "icon": "",
+                            "txt": "Все кейсы"
+                        }
+                    ])
+      </li>
+      <li class="cta__actions-item reveal fade-up">
+        <!-- prettier-ignore -->
+        @loop('./ui/button-label.html', [
+                        {
+                            "tag": "a",
+                            "attr": "href='tel:79164402991'",
+                            "cls": "cta__btn-label _has-bg _has-bg_ghost",
+                            "icon": "tg.webp",
+                            "txt": "+7 916 440 29 91"
+                        }
+                    ])
+      </li>
+    </ul>
+  </div>
+</section>

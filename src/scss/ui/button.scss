@@ -95,7 +95,19 @@
     }
   }
 
-  &._has-bg {
+  &._has-bg_ghost {
+    @media (any-hover: hover) {
+      &:hover {
+        .btn-label {
+          &__inner {
+            border-color: #9136ff;
+          }
+        }
+      }
+    }
+  }
+
+  &._has-bg:not(._has-bg_ghost) {
     .btn-label {
       &__inner {
         color: var(--c-white);
