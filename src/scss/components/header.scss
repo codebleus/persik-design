@@ -69,6 +69,12 @@
     justify-content: space-between;
   }
 
+  &__info {
+    @media (max-width: 48em) {
+      width: inherit;
+    }
+  }
+
   &__nav-list {
     gap: 7rem;
 
