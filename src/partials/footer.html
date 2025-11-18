@@ -1,0 +1,124 @@
+<footer class="footer">
+  <div class="footer__container container">
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">О студии</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Дизайн сайтов</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Портфолио</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Интернет-магазины</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Услуги</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Каталоги</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Статьи</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Порталы</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Контакты</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Брендовые сайты</a>
+        </li>
+      </ul>
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Дизайн платформ</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Презентации</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">ПО</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Дизайн приложений</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Платежные системы</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Аудит сайта</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Банковские системы</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Брендинг</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Лендинги</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Дизанй-системы</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer__contacts">
+      <div class="footer__contacts-group">
+        <!-- prettier-ignore -->
+        @include('./ui/tel-header.html', {
+                        "txt": "+7 916 440 29 91",
+                        "attr": "href='tel:79164402991'",
+                        "icon": "phone",
+                        "cls": "footer__tel"
+                    })
+
+        <a href="mailto:persik-design@yandex.ru" class="footer__email"
+          >persik-design@yandex.ru</a
+        >
+      </div>
+      <div class="footer__contacts-group">
+        <!-- prettier-ignore -->
+        @include('ui/button.html', {
+                "cls": "footer__cta-btn",
+                "tag":"button",
+                "attr": "type='button'",
+                "txt": "Оставить заявку"
+                })
+
+        <ul class="footer__socials">
+          <li class="footer__socials-item">
+            <a href="#" target="_blank" class="footer__socials-link">
+              <img src="img/svg/tg.webp" alt="" class="footer__socials-icon" />
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="#" target="_blank" class="footer__socials-link">
+              <img src="img/svg/wa.webp" alt="" class="footer__socials-icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="/" class="footer__logo-wrap">
+      <picture class="footer__logo-pic">
+        <source
+          srcset="img/logo-5-m.svg"
+          media="(max-width: 48em)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="img/logo-5.svg"
+          media="(min-width: 48.01em)"
+          type="image/webp"
+        />
+
+        <img src="img/logo-5.svg" class="footer__pic-content" alt="" />
+      </picture>
+    </a>
+  </div>
+</footer>

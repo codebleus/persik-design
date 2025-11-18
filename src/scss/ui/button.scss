@@ -77,6 +77,7 @@
       &__text {
         font-weight: 500;
       }
+
       &__icon {
         @media (max-width: 48em) {
           --size: 7.2rem;
@@ -164,5 +165,90 @@
     margin-bottom: 0.1em;
     font-weight: 500;
     white-space: nowrap;
+  }
+}
+
+.label {
+  position: relative;
+  display: inline-flex;
+  margin-right: auto;
+  border: 1px solid var(--c-accent);
+  padding: 0.2rem 0;
+  background-color: var(--c-white);
+
+  &::before,
+  &::after,
+  .label__text::before,
+  .label__text::after {
+    content: "";
+    position: absolute;
+    border: 1px solid var(--c-accent);
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: var(--c-white);
+  }
+
+  &::before {
+    left: -0.4rem;
+    top: -0.4rem;
+  }
+
+  &::after {
+    right: -0.4rem;
+    top: -0.4rem;
+  }
+
+  // .label__text
+
+  &__text {
+    padding: 0.4rem 1rem;
+    width: 100%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+
+    @media (max-width: 48em) {
+      padding: 1.4rem 2rem;
+      font-size: 3rem;
+    }
+
+    &::before {
+      left: -0.4rem;
+      bottom: -0.4rem;
+    }
+
+    &::after {
+      right: -0.4rem;
+      bottom: -0.4rem;
+    }
+  }
+}
+
+.btn-pricelist-item {
+  display: inline-flex;
+  flex: 0 0 var(--size);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: var(--size);
+  height: var(--size);
+  color: var(--c-white);
+  background-color: var(--c-primary);
+
+  --size: 8.3rem;
+
+  &__icon {
+    --size: 3.1rem;
+
+    flex: 0 0 var(--size);
+    width: var(--size);
+    height: var(--size);
+  }
+
+  @media (max-width: 48em) {
+    --size: 16.6rem;
+
+    &__icon {
+      --size: 6.2rem;
+    }
   }
 }

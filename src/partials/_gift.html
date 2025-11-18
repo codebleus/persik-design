@@ -1,0 +1,43 @@
+<section class="gift">
+  <div class="gift__container container">
+    <div class="gift__bg-wrap">
+      <video
+        src="video/gift.mp4"
+        playsinline
+        loop
+        muted
+        autoplay
+        class="gift__bg fade-up reveal"
+      ></video>
+    </div>
+    <div class="gift__text-content fade-up reveal">
+      <!-- prettier-ignore -->
+      @include('./ui/ic-label.html', {
+                    "cls": "gift__ic-label",
+                    "icon": "img/svg/94.png",
+                    "txt": "Super Prize",
+                    "tag": "div",
+                    "attr": ""
+                })
+
+      <h2 class="gift__heading h-m">Презентация в подарок!</h2>
+
+      <p class="gift__subtitle subtitle-medium">
+        Приведите друга, который сделает заказ и мы подарим вам презентацию до
+        20 страниц!
+      </p>
+
+      <!-- prettier-ignore -->
+      @include('./ui/label.html', {
+                        "cls": "gift__label",
+                        "tag": "div",
+                        "attr": "",
+                        "txt": "Наши персики самый вкусные!"
+                    })
+
+      <div class="gift__caption caption-gift">
+        Количество друзей не ограничено, страницы могут суммироваться
+      </div>
+    </div>
+  </div>
+</section>

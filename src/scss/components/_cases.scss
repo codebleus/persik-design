@@ -1,5 +1,8 @@
 .cases {
+  position: relative;
+  z-index: 2;
   margin-bottom: 9rem;
+
   // .cases__container
 
   &__container {

@@ -1,0 +1,110 @@
+.pricelist-item {
+  @media (max-width: 48em) {
+    .btn-pricelist-item {
+      color: #825ab4;
+      background-color: var(--c-white);
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  // .pricelist-item__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6rem;
+    padding: 5.3rem 3.7rem;
+    height: 36.8rem;
+    background: url("../img/svg/subtract.svg") left top / 100% no-repeat;
+    transition: filter var(--p-tr);
+    will-change: filter;
+    row-gap: 3.5rem;
+
+    @media (any-hover: hover) {
+      &:hover {
+        filter: drop-shadow(-4rem 4rem 10rem rgba(30, 25, 85, 0.38));
+      }
+    }
+
+    @media (max-width: 48em) {
+      padding: 6rem 4rem;
+      height: 44rem;
+      background: url("../img/svg/subtract-m.svg") left top / 100% no-repeat;
+      row-gap: 4rem;
+    }
+  }
+
+  // .pricelist-item__headline
+
+  &__headline {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+
+    &::after {
+      content: "";
+
+      --size: 3.3rem;
+
+      flex: 0 0 var(--size);
+      width: var(--size);
+      height: var(--size);
+      background: url("../img/svg/arrow-right.svg") center / contain no-repeat;
+    }
+
+    @media (max-width: 48em) {
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+
+      &::after {
+        --size: 6.6rem;
+      }
+    }
+  }
+
+  // .pricelist-item__heading
+
+  &__heading {
+    display: inline-flex;
+    gap: 1rem;
+
+    span {
+      color: var(--c-white);
+    }
+
+    @media (max-width: 48em) {
+      gap: 2rem;
+    }
+  }
+
+  // .pricelist-item__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 48.01em) {
+      row-gap: 0.6rem;
+    }
+  }
+
+  // .pricelist-item__item
+
+  &__item {
+  }
+
+  // .pricelist-item__item-txt
+
+  &__item-txt {
+    @media (max-width: 48em) {
+      font-size: 3rem;
+    }
+  }
+}

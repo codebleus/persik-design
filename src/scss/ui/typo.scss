@@ -13,6 +13,17 @@
   }
 }
 
+.h-m {
+  font-weight: 600;
+  font-size: 6rem;
+  line-height: 7.6rem;
+
+  @media (max-width: 48em) {
+    font-size: 5rem;
+    line-height: 6.4rem;
+  }
+}
+
 .subtitle {
   font-weight: 500;
   font-size: 3rem;
@@ -36,6 +47,7 @@
   font-weight: 500;
   font-size: 2.5rem;
   line-height: 3.2rem;
+
   @media (max-width: 48em) {
     font-size: 4rem;
     line-height: 100%;
@@ -49,5 +61,48 @@
 
   @media (max-width: 48em) {
     font-size: 3rem;
+  }
+}
+
+.caption-gift {
+  font-weight: 300;
+
+  @media (max-width: 48em) {
+    font-size: 2.8rem;
+  }
+
+  &::before {
+    content: "*";
+    margin-right: 1rem;
+    font-size: 2.5rem;
+    color: var(--c-accent-secondary);
+
+    @media (max-width: 48em) {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+.ic-label {
+  display: inline-flex;
+  gap: 2.5rem;
+
+  // .ic-label__icon
+
+  &__icon {
+    flex: 0 0 var(--size);
+    margin-top: 0.1rem;
+    width: var(--size);
+    height: var(--size);
+
+    --size: 5.2rem;
+  }
+
+  // .ic-label__text
+
+  &__text {
+    @media (max-width: 48em) {
+      font-size: 4rem;
+    }
   }
 }

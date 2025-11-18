@@ -1,0 +1,19 @@
+<@tag @attr class="pricelist-item @cls">
+  <a href="#" class="pricelist-item__inner">
+    <div class="pricelist-item__headline">
+      <h3 class="pricelist-item__heading subtitle-medium">
+        @heading <span>@price</span>
+      </h3>
+    </div>
+    <ul class="pricelist-item__list">
+    <!-- prettier-ignore -->
+    @if(sublist && sublist.length){
+            @for(var i = 0; i < sublist.length; i++){
+    <li class="pricelist-item__item">
+      <span class="pricelist-item__item-txt">`+(sublist[i].txt)+`</span>
+    </li>
+    } }
+    </ul>
+</a>
+  <button class="pricelist-item__btn btn-pricelist-item" type="button"><svg class=" btn-pricelist-item__icon" aria-hidden="true"><use href="#edit-svg"></use></svg></button>
+</@tag>

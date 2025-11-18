@@ -1,0 +1,155 @@
+.gift {
+  position: relative;
+  margin-bottom: 0;
+  border-radius: 6rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 3.8rem 3.6rem;
+  background-color: var(--c-primary);
+
+  @media (max-width: 48em) {
+    border-radius: 18rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 6rem;
+    padding-bottom: 12rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 10.4rem;
+      height: 10rem;
+      background: url("../img/svg/94.png") center / contain no-repeat;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  // .gift__container
+
+  &__container.container {
+    display: grid;
+    grid-template-columns: 72.5rem 1fr;
+    padding: 0;
+    width: 100%;
+    color: var(--c-white);
+    gap: 5.1rem;
+
+    @media (max-width: 48em) {
+      display: flex;
+      flex-direction: column;
+      border-radius: 12rem;
+      gap: 7.4rem;
+    }
+  }
+
+  // .gift__bg-wrap
+
+  &__bg-wrap {
+    display: flex;
+    overflow: hidden;
+    border-radius: 6rem;
+    width: 100%;
+    height: 66.7rem;
+
+    @media (max-width: 48em) {
+      border-radius: 12rem;
+      height: 75.8rem;
+    }
+  }
+
+  // .gift__bg
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  // .gift__text-content
+
+  &__text-content {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 48.01em) {
+      padding-top: 10.7rem;
+    }
+
+    @media (max-width: 48em) {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__ic-label {
+    margin-bottom: 2rem;
+    color: var(--c-accent);
+
+    .ic-label__text {
+      font-weight: 500;
+    }
+
+    @media (max-width: 48em) {
+      margin-bottom: 4rem;
+
+      .ic-label__icon {
+        display: none;
+      }
+    }
+  }
+
+  // .gift__heading
+
+  &__heading {
+    margin-bottom: 8rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+
+    @media (max-width: 48em) {
+      margin-bottom: 4.6rem;
+    }
+  }
+
+  // .gift__subtitle
+
+  &__subtitle {
+    margin-bottom: 4rem;
+    max-width: 74.2rem;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+
+    @media (max-width: 48em) {
+      font-size: 3.6rem;
+      line-height: 126%;
+    }
+  }
+
+  &__label {
+    margin-bottom: 5.5rem;
+    color: var(--c-primary);
+
+    .label__text.subtitle-medium {
+      @media (min-width: 48.01em) {
+        padding: 0.4rem 1.6rem;
+        letter-spacing: 0.01em;
+      }
+    }
+
+    @media (max-width: 48em) {
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+  }
+
+  // .gift__caption
+
+  &__caption {
+    color: var(--c-quaternary);
+
+    @media (max-width: 48em) {
+      max-width: 70rem;
+    }
+  }
+}

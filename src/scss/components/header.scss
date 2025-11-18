@@ -19,8 +19,8 @@
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 33.6rem 1fr;
-    height: 7.2rem;
     width: 184rem;
+    height: 7.2rem;
     gap: 7rem;
 
     @media (min-width: 1900px) {
@@ -70,6 +70,9 @@
   }
 
   &__info {
+    grid-column: 3/4;
+    gap: 5.6rem;
+
     @media (max-width: 48em) {
       width: inherit;
     }
@@ -108,13 +111,6 @@
   // .header__logo
 
   &__logo {
-  }
-
-  // .header__info
-
-  &__info {
-    grid-column: 3/4;
-    gap: 5.6rem;
   }
 
   &__cta-btn {

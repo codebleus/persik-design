@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  z-index: 2;
   margin-bottom: 8.3rem;
 
   @media (max-width: 48em) {
@@ -27,6 +28,7 @@
   &__logo-wrap {
     margin-top: 8rem;
     width: 177rem;
+
     @media (max-width: 48em) {
       margin-top: -6rem;
       width: 88rem;
@@ -41,6 +43,7 @@
         display: none;
       }
     }
+
     &_d {
       @media (max-width: 48em) {
         display: none;
